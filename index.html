@@ -19,10 +19,10 @@ layout: default
     </div>
     <div class="col-sm-4">
 
-      <div class="social">
-        <div class="fb-like" data-href="http://yiu.co.uk/starwars/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>         
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-hashtags="StarWars,TheForceAwakens,FirstOrder">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </div>
+<a target="_blank" class="btn btn-xs btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | url_encode }}" title="Share on Facebook"><i class="fab fa-facebook"></i> Like</a>
+      <a target="_blank" class="btn btn-xs btn-social btn-tw" href="https://twitter.com/intent/tweet?text={{ site.title | url_encode }}&url={{ page.url | prepend: site.url | url_encode }}&via={{ site.twitter }}" title="Share on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
+      <a target="_blank" class="btn btn-xs btn-social btn-li" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.url | url_encode }}" title="Share on LinkedIn"><i class="fab fa-linkedin"></i> Share</a>
+      
 
     </div>
   </div>
