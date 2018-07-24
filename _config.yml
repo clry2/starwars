@@ -1,0 +1,13 @@
+# Site settings
+title: "First Order"
+description: "The First Order exists to eliminate chaos and corruption, to reclaim the Imperial legacy and to restore stability to the galaxy."
+url: "https://yiu.co.uk/starwars"
+permalink: pretty
+
+# Account settings
+twitter: clry2
+facebook: 509241123
+ganalytics: UA-25933978-1
+
+# Build settings
+markdown: kramdown

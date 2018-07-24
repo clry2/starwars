@@ -1,0 +1,229 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+
+
+// Base variables
+
+$base-font-family:      Helvetica, Arial, sans-serif;
+$base-font-size:        16px;
+$base-font-weight:      300;
+$base-font-color:       #333333;
+$base-font-color-med:   #666666;
+$base-font-color-light: #999999;
+
+$base-line-height:      1.5;
+
+$brand-color:           #CC0000;
+$brand-color-hover:     #FF0000;
+
+$spacing-unit:      30px;
+
+
+
+// Base styles 
+
+body { 
+  padding-bottom: 0px;
+  font-family:    $base-font-family;
+  font-size:      $base-font-size; 
+  font-weight:    $base-font-weight;
+  color:          $base-font-color;  
+  line-height:    $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+h2 {
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  border-bottom: 3px solid $brand-color;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: $spacing-unit;
+}
+
+.fold {
+  h3 {
+    margin-top: $spacing-unit;
+    border-top: 3px solid $brand-color; 
+    padding-top: $spacing-unit / 2;
+  }
+  h4 {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+
+h4.latest {
+  margin-top: 0px;
+  border-top: 1px solid #DDDDDD;
+  padding-top: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
+}
+
+small {
+  color: $base-font-color-med;
+  a {
+    color: $base-font-color-light; 
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $base-font-color-med;
+  }
+}
+
+hr {
+  border-top: 1px solid #DDDDDD;
+}
+
+.lead {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.logo {
+  width: 48px;
+}
+
+a {
+  color: $brand-color;
+}
+
+a:hover {
+  color: $brand-color-hover;
+}
+
+
+
+// Navbar
+
+.navbar {
+  margin-bottom: 0px;
+
+  .brand {
+
+    font-size: 28px;
+    font-weight: 700;
+    margin: 5px 10px 0px 0px;
+  
+    img {
+      height: 24px;
+      margin: 0px 10px 5px 0px;
+    }
+    
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  
+    a:hover {
+      border-bottom: 1px solid #FFFFFF;
+    }
+  
+  }
+  
+}
+
+
+
+// Grid
+
+.row {
+  margin-bottom: $spacing-unit;
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      margin-bottom: $spacing-unit / 3;
+    }
+
+    li:before {
+      content: "–";
+      padding-right: 5px;
+    }
+    
+  }
+  
+  ol {
+    list-style: decimal;
+    
+    li {
+      margin-bottom: $spacing-unit / 3;
+    }
+    
+  }
+  
+}
+
+
+
+// Special
+
+.navborder {
+  border-top: 10px solid $brand-color;
+}
+
+.logoborder {
+  border-left: 3px solid $brand-color;
+  padding-left: $spacing-unit / 2;
+  h1 {
+    margin-top: $spacing-unit / 3;
+  }
+}
+
+.footer {
+  border-top: $spacing-unit * 2 / 3 solid $brand-color;
+  background-color: #DDDDDD;
+  h3 {
+    margin-top: $spacing-unit;
+  }
+  a {
+    color: $base-font-color-med;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $base-font-color;
+  }
+  
+  hr {
+    border-top: 1px solid #CCCCCC;
+  }
+}
+
+.social {
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: bottom !important;
+}
+
+.fb-like span {
+    vertical-align: baseline !important;
+}
+
+
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+  .navbar .brand {
+    margin-left: 15px;
+  }
+  .row div:not(:first-child) {
+    margin-top: $spacing-unit * 1.5;
+  }
+}
