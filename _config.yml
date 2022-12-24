@@ -11,3 +11,5 @@ ganalytics: UA-25933978-1
 
 # Build settings
 markdown: kramdown
+sass:
+  sourcemap: never
