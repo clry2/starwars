@@ -207,6 +207,51 @@ a:hover {
 
 
 
+// Cookie notice 
+
+.cookie-notice { 
+  display: none;
+  color: #FFFFFF;
+  small {
+    color: #FFFFFF;
+  }
+  line-height: 1.25;
+  background-color: rgba(0,0,0,0.9);
+  margin: 0;
+  padding: 2rem;
+  position: fixed;
+  border-radius: 5px;
+  width: 50%;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 999;
+  .close {
+    margin-top: -3px;
+    color: #FFFFFF;
+    text-shadow: none;
+    opacity: .5;
+  }
+  .close:not(:disabled):not(.disabled):hover {
+    color: #FFFFFF;
+    text-shadow: none;
+    opacity: 1;
+  }
+  .btn {
+    width: 100px;
+  }
+}
+
+@media (max-width: 767px) { 
+  .cookie-notice {
+    border-radius: 0px;
+    width: 100%;
+    bottom: 0rem;
+    left: 0rem;
+  }
+}
+
+
+
 // Social buttons
 
 .btn-social, .btn-social:hover, .btn-social:active, .btn-social:visited {
