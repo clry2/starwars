@@ -1,3 +1,7 @@
+---
+#
+---
+
 // Cookies
 
 function createCookie(name,value,days) {
@@ -50,14 +54,14 @@ if(readCookie('cookie-consent')=='true') {
 };
 
 const script = document.createElement('script');
-script.src = 'https://www.googletagmanager.com/gtag/js?id=G-7CHPEC8W2F';
+script.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.ga4 }}';
 script.async = true;
 document.body.appendChild(script);
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-7CHPEC8W2F');
+gtag('config', '{{ site.ga4 }}');
 
 // Cookie notice
 
