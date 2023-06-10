@@ -245,8 +245,13 @@ a:hover {
   .cookie-notice {
     border-radius: 0px;
     width: 100%;
-    bottom: 0rem;
-    left: 0rem;
+    bottom: 0;
+    left: 0;
+    .btn {
+      display: block;
+      width: 100%;
+      margin-bottom:5px;
+    }
   }
 }
 
